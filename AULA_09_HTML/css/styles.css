@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+header {
+    height: 100px;
+    background-color: yellow;
+    /* MARGIN E PADDING */
+    margin: 50px;
+
+    padding: 20px 10px;
+
+    border: 2px solid black;
+}   
