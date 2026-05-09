@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes animacaoCaixa {
+            0% { left: 0px; }
+            50% { left: 200px; }
+            100% { left: 0px; }
+        }
+        #caixa {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 0px;
+            animation: animacaoCaixa 2s infinite;
+            transition: 
+                background 500ms, 
+                width 500ms, 
+                height 500ms;
+        }
+        #caixa:hover {
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa"></div>
+    <header>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, totam itaque at laborum illo velit eligendi quasi, saepe sit tempora quibusdam sequi natus numquam. Libero neque accusamus eum doloribus incidunt.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolorum velit fugiat necessitatibus odio tempora nisi labore quo, voluptates placeat nostrum consequatur esse incidunt qui itaque voluptatum sed ad cum!
+        </p>
+    </header>
+</body>
+</html>
