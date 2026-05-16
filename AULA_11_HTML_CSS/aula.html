@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+    <style>
+        :root {
+            --color-blue: #0070bb;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer {
+            background-color: var(--color-blue);
+            
+        }
+        header {
+            /* OCULTAR ELEMENTO COM CSS display: none;*/
+            /* display: none; */
+        }
+        
+        body:hover header {
+            display: block;
+        }
+
+        img {
+            float: right;
+        }
+
+        /* MENU */
+        nav ul {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+            display: flex;
+            gap: 10px;
+        }
+        nav ul li {
+            list-style: none;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li ul {
+            display: none;
+    
+        }
+        
+        nav ul li:hover>ul {
+            display: block;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+        }
+        nav ul li ul li {
+            display: block;
+            padding: 10px;
+        }
+        nav ul li ul li a:hover {
+           background-color: aqua;
+        }
+
+        /* SUB DO SUB */
+        nav ul li ul li ul {
+            display: none;
+        }
+        nav ul li ul li:hover ul {
+            background-color: yellow;
+            display: block;
+            position: relative;
+            top: -40px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header
+        <img width="100px" src="https://digitalcollege.com.br/wp-content/uploads/2022/05/logo-digital-1536x578.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li>
+                    <a href="">Categorias</a>
+                    <ul>
+                        <li><a href="">Educação</a></li>
+                        <li><a href="">Moda</a></li>
+                        <li>
+                            <a href="">Lazer</a>
+                            <ul>
+                                <li><a href="">Cinema</a></li>
+                                <li><a href="">Praia</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        Main
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

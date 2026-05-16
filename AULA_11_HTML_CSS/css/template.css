@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+.horizontal-centro {
+    justify-content: center;
+}
+.vertical-centro {
+    align-items: center;
+}
+.coluna-10 {
+    width: 10%;
+}
+.coluna-20 {
+    width: 20%;
+}
+
+.coluna-80 {
+    width: 80%;
+}

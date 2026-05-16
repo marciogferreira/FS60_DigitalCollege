@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - Responsividade com CSS</title>
+    <style>
+        header {
+            min-height: 100px;
+            background-color: yellow;
+            display: flex;
+            flex-direction: row;
+        }
+        /* MOBILE */
+        @media screen and (max-width: 500px) {
+            header {
+                background-color: red;
+                flex-direction: column;
+            }
+        }
+
+        /* TABLET */
+        @media screen and (min-width: 501px) and (max-width: 799px) {
+            header {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img width="200px" src="https://digitalcollege.com.br/wp-content/uploads/2022/05/logo-digital-1536x578.png" alt="">
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

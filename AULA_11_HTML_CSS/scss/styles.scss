@@ -1,0 +1,16 @@
+$primary-color: blue;
+$secondary-color: pink;
+
+header {
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+
+
+// npm install -g sass
+
+// npx sass scss/styles.scss css/styles.css
