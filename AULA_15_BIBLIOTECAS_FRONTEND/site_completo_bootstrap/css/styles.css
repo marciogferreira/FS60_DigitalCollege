@@ -1,0 +1,33 @@
+header {
+    background-color: #270B1B;
+    color: white;
+    height: 200px;
+    padding: 10px;
+}
+
+nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f3f3f3;
+}
+
+.navbar-nav .nav-link:hover {
+    color: pink;
+}
+
+.navbar .navbar-toggler {
+    color: white !important;
+}
+
+footer {
+    background-color: #222;
+    color: #F4f4f4;
+    height: 250px;
+    padding: 20px;
+}
+
+footer a {
+    color: #CCC !important;
+}
