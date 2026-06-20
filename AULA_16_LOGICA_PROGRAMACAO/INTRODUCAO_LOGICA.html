@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Aula de Lógica de Programação</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/night.css">
+
+    <style>
+        * {
+            font-size: 90%;
+        }
+        :root {
+            --cor-principal: #00d4ff;
+            --cor-secundaria: #1e293b;
+        }
+
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            color: var(--cor-principal);
+        }
+
+        .reveal section {
+            text-align: left;
+        }
+
+        .caixa {
+            background: rgba(255,255,255,0.08);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid var(--cor-principal);
+        }
+
+        .codigo {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 10px;
+            color: #e2e8f0;
+            font-family: Consolas, monospace;
+            font-size: 0.8em;
+        }
+
+        .destaque {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .centro {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <!-- Slide 1 -->
+        <section>
+            <h1>Lógica de Programação</h1>
+            <h3>Fundamentos para Desenvolvimento de Software</h3>
+            <p>Professor(a): Marcio Ferreira</p>
+        </section>
+
+        <!-- Slide 2 -->
+        <section>
+            <h2>O que é Lógica de Programação?</h2>
+            <div class="caixa">
+                <p>
+                    É a técnica de organizar pensamentos e instruções
+                    para resolver problemas de forma estruturada.
+                </p>
+            </div>
+
+            <p class="fragment">
+                Programar é ensinar o computador a executar uma sequência de passos.
+            </p>
+        </section>
+
+        <!-- Slide 3 -->
+        <section>
+            <h2>Por que estudar lógica?</h2>
+
+            <ul>
+                <li class="fragment">Resolver problemas de forma eficiente</li>
+                <li class="fragment">Desenvolver raciocínio lógico</li>
+                <li class="fragment">Facilitar o aprendizado de linguagens</li>
+                <li class="fragment">Criar algoritmos corretos</li>
+            </ul>
+        </section>
+
+        <!-- Slide 4 -->
+        <section>
+            <h2>O que é um Algoritmo?</h2>
+
+            <div class="caixa">
+                Um algoritmo é uma sequência finita de passos para resolver um problema.
+            </div>
+
+            <br>
+
+            <h3>Exemplo: Fazer Café</h3>
+
+            <ol>
+                <li>Colocar água na cafeteira</li>
+                <li>Adicionar café</li>
+                <li>Ligar a cafeteira</li>
+                <li>Aguardar o preparo</li>
+                <li>Servir o café</li>
+            </ol>
+        </section>
+
+        <section>
+            <img width="500px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9d1_zaS5XV32nW4EvHv_jYKNYk9HSOM69Ow&s" alt="">
+        </section>
+        <!-- Slide 5 -->
+        <section>
+            <h2>Fluxograma</h2>
+
+            <p>Representação gráfica de um algoritmo.</p>
+
+            <div class="caixa">
+                Início → Ler idade → Idade ≥ 18? →
+                Sim → Maior de idade →
+                Não → Menor de idade → Fim
+            </div>
+        </section>
+
+        <!-- Slide 6 -->
+        <section>
+            <h2>Variáveis</h2>
+
+            <p>São espaços de memória utilizados para armazenar informações.</p>
+
+            <div class="codigo">
+                nome = "Maria"<br>
+                idade = 20<br>
+                salario = 3500.50
+            </div>
+        </section>
+
+        <!-- Slide 7 -->
+        <section>
+            <h2>Tipos de Dados</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inteiro</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Real</td>
+                        <td>5.75</td>
+                    </tr>
+                    <tr>
+                        <td>Texto</td>
+                        <td>"Olá"</td>
+                    </tr>
+                    <tr>
+                        <td>Booleano</td>
+                        <td>Verdadeiro/Falso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Slide 8 -->
+        <section>
+            <h2>Operadores Aritméticos</h2>
+
+            <div class="codigo">
+                + Soma<br>
+                - Subtração<br>
+                * Multiplicação<br>
+                / Divisão<br>
+                % Resto da divisão
+            </div>
+
+            <p class="fragment">
+                Exemplo: 10 + 5 = <span class="destaque">15</span>
+            </p>
+        </section>
+
+        <!-- Slide 9 -->
+        <section>
+            <h2>Estruturas Condicionais</h2>
+
+            <div class="codigo">
+SE nota >= 7 ENTÃO<br>
+&nbsp;&nbsp;Aprovado<br>
+SENÃO<br>
+&nbsp;&nbsp;Recuperação<br>
+FIMSE
+            </div>
+        </section>
+
+        <!-- Slide 10 -->
+        <section>
+            <h2>Estruturas de Repetição</h2>
+
+            <div class="codigo">
+PARA i DE 1 ATÉ 5 FAÇA<br>
+&nbsp;&nbsp;Exibir(i)<br>
+FIMPARA
+            </div>
+
+            <p>
+                Utilizadas para repetir instruções várias vezes.
+            </p>
+        </section>
+
+        <!-- Slide 11 -->
+        <section>
+            <h2>Exemplo Completo</h2>
+
+            <div class="codigo">
+Leia nota1<br>
+Leia nota2<br><br>
+
+media = (nota1 + nota2) / 2<br><br>
+
+Se media >= 7 então<br>
+&nbsp;&nbsp;Exibir "Aprovado"<br>
+Senão<br>
+&nbsp;&nbsp;Exibir "Reprovado"<br>
+FimSe
+            </div>
+        </section>
+
+        <!-- Slide 12 -->
+        <section>
+            <h2>Boas Práticas</h2>
+
+            <ul>
+                <li>Utilizar nomes claros para variáveis</li>
+                <li>Dividir problemas complexos em partes menores</li>
+                <li>Testar os algoritmos</li>
+                <li>Documentar quando necessário</li>
+            </ul>
+        </section>
+
+        <!-- Slide 13 -->
+        <section>
+            <h2>Exercício</h2>
+
+            <div class="caixa">
+                Desenvolva um algoritmo que:
+                <ol>
+                    <li>Leia dois números</li>
+                    <li>Some os valores</li>
+                    <li>Exiba o resultado</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Slide 14 -->
+        <section class="centro">
+            <h1>Obrigado!</h1>
+            <h3>Perguntas?</h3>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+
+<script>
+    Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        transition: 'slide',
+        controls: true,
+        progress: true
+    });
+</script>
+
+</body>
+</html>

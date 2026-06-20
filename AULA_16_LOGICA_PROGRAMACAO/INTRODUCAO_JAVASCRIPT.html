@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+
+    <title>Introdução ao JavaScript</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/league.css">
+
+    <style>
+        .reveal pre code {
+            max-height: 500px;
+            font-size: 0.8em;
+        }
+
+        .destaque {
+            color: #42affa;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- Slide 1 -->
+<section>
+    <h1>Introdução ao JavaScript</h1>
+    <h3>Variáveis e Tipos de Dados</h3>
+    <p>Curso de Desenvolvimento Web</p>
+</section>
+
+<!-- Slide 2 -->
+<section>
+    <h2>Objetivos da Aula</h2>
+
+    <ul>
+        <li>Compreender o papel do JavaScript na Web</li>
+        <li>Conhecer variáveis e constantes</li>
+        <li>Entender os principais tipos de dados</li>
+        <li>Declarar e utilizar variáveis</li>
+        <li>Praticar com exemplos simples</li>
+    </ul>
+</section>
+
+<!-- Slide 3 -->
+<section>
+    <h2>O que é JavaScript?</h2>
+
+    <p>
+        JavaScript é uma linguagem de programação utilizada para
+        tornar páginas web <span class="destaque">interativas e dinâmicas</span>.
+    </p>
+
+    <ul>
+        <li>Executa no navegador</li>
+        <li>Manipula HTML e CSS</li>
+        <li>Responde a eventos do usuário</li>
+        <li>Pode ser usado também no servidor (Node.js)</li>
+    </ul>
+</section>
+
+<!-- Slide 4 -->
+<section>
+    <h2>JavaScript na Web</h2>
+
+    <table>
+        <tr>
+            <th>Tecnologia</th>
+            <th>Função</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Estrutura</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Estilo</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Comportamento</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Slide 5 -->
+<section>
+    <h2>Primeiro Código</h2>
+
+<pre><code class="language-javascript">
+console.log("Olá, Mundo!");
+</code></pre>
+
+    <p>Exibe uma mensagem no console do navegador.</p>
+</section>
+
+<!-- Slide 6 -->
+<section>
+    <h2>O que são Variáveis?</h2>
+
+    <p>
+        Variáveis são espaços na memória utilizados para armazenar dados.
+    </p>
+
+<pre><code class="language-javascript">
+let nome = "Maria";
+</code></pre>
+
+    <p>
+        A variável <strong>nome</strong> armazena o texto "Maria".
+    </p>
+</section>
+
+<!-- Slide 7 -->
+<section>
+    <h2>Declaração de Variáveis</h2>
+
+<pre><code class="language-javascript">
+var cidade = "Fortaleza";
+
+let idade = 20;
+
+const PI = 3.14159;
+</code></pre>
+
+    <ul>
+        <li><strong>var</strong> → forma antiga</li>
+        <li><strong>let</strong> → variável que pode mudar</li>
+        <li><strong>const</strong> → valor constante</li>
+    </ul>
+</section>
+
+<!-- Slide 8 -->
+<section>
+    <h2>Diferença entre let e const</h2>
+
+<pre><code class="language-javascript">
+let contador = 1;
+contador = 2;
+
+const taxa = 10;
+// taxa = 20; // erro
+</code></pre>
+
+    <p>
+        Use <strong>const</strong> sempre que o valor não precisar mudar.
+    </p>
+</section>
+
+<!-- Slide 9 -->
+<section>
+    <h2>Tipos de Dados</h2>
+
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Null</li>
+        <li>Undefined</li>
+        <li>Object</li>
+        <li>Array</li>
+    </ul>
+</section>
+
+<!-- Slide 10 -->
+<section>
+    <h2>String</h2>
+
+    <p>Representa textos.</p>
+
+<pre><code class="language-javascript">
+let nome = "João";
+let curso = 'JavaScript';
+</code></pre>
+
+    <p>Podem ser usadas aspas simples ou duplas.</p>
+</section>
+
+<!-- Slide 11 -->
+<section>
+    <h2>Number</h2>
+
+    <p>Representa números inteiros ou decimais.</p>
+
+<pre><code class="language-javascript">
+let idade = 25;
+
+let altura = 1.75;
+</code></pre>
+</section>
+
+<!-- Slide 12 -->
+<section>
+    <h2>Boolean</h2>
+
+    <p>Representa verdadeiro ou falso.</p>
+
+<pre><code class="language-javascript">
+let aprovado = true;
+
+let logado = false;
+</code></pre>
+</section>
+
+<!-- Slide 13 -->
+<section>
+    <h2>Null</h2>
+
+    <p>Representa ausência intencional de valor.</p>
+
+<pre><code class="language-javascript">
+let usuario = null;
+</code></pre>
+</section>
+
+<!-- Slide 14 -->
+<section>
+    <h2>Undefined</h2>
+
+    <p>Valor padrão de uma variável não inicializada.</p>
+
+<pre><code class="language-javascript">
+let endereco;
+
+console.log(endereco);
+</code></pre>
+</section>
+
+<!-- Slide 15 -->
+<section>
+    <h2>Object</h2>
+
+    <p>Estrutura para armazenar múltiplos dados.</p>
+
+<pre><code class="language-javascript">
+let aluno = {
+    nome: "Ana",
+    idade: 18
+};
+</code></pre>
+</section>
+
+<!-- Slide 16 -->
+<section>
+    <h2>Array</h2>
+
+    <p>Lista de elementos.</p>
+
+<pre><code class="language-javascript">
+let frutas = [
+    "Maçã",
+    "Banana",
+    "Laranja"
+];
+</code></pre>
+</section>
+
+<!-- Slide 17 -->
+<section>
+    <h2>Descobrindo o Tipo</h2>
+
+<pre><code class="language-javascript">
+let nome = "Carlos";
+
+console.log(typeof nome);
+</code></pre>
+
+    <p>Resultado:</p>
+
+<pre><code>
+string
+</code></pre>
+</section>
+
+<!-- Slide 18 -->
+<section>
+    <h2>Template Strings</h2>
+
+<pre><code class="language-javascript">
+let nome = "Pedro";
+let idade = 22;
+
+console.log(
+`Meu nome é ${nome}
+e tenho ${idade} anos`
+);
+</code></pre>
+</section>
+
+<!-- Slide 19 -->
+<section>
+    <h2>Exemplo Completo</h2>
+
+<pre><code class="language-javascript">
+const nome = "Lucas";
+let idade = 19;
+let estudante = true;
+
+console.log(nome);
+console.log(idade);
+console.log(estudante);
+</code></pre>
+</section>
+
+<!-- Slide 20 -->
+<section>
+    <h2>Exercício Prático</h2>
+
+    <ol>
+        <li>Crie uma variável chamada nome.</li>
+        <li>Crie uma variável chamada idade.</li>
+        <li>Crie uma variável chamada cidade.</li>
+        <li>Exiba todas usando console.log().</li>
+    </ol>
+</section>
+
+<!-- Slide 21 -->
+<section>
+    <h2>Desafio</h2>
+
+    <p>Crie um objeto chamado aluno contendo:</p>
+
+    <ul>
+        <li>Nome</li>
+        <li>Idade</li>
+        <li>Curso</li>
+    </ul>
+
+    <p>Exiba o objeto no console.</p>
+</section>
+
+<!-- Slide 22 -->
+<section>
+    <h2>Resumo</h2>
+
+    <ul>
+        <li>JavaScript adiciona interatividade às páginas web</li>
+        <li>Variáveis armazenam dados</li>
+        <li>let → variável mutável</li>
+        <li>const → valor constante</li>
+        <li>Principais tipos:
+            <ul>
+                <li>String</li>
+                <li>Number</li>
+                <li>Boolean</li>
+                <li>Null</li>
+                <li>Undefined</li>
+                <li>Object</li>
+                <li>Array</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<!-- Slide 23 -->
+<section>
+    <h1>Obrigado!</h1>
+    <h3>Perguntas?</h3>
+</section>
+
+</div>
+</div>
+
+<script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+
+<script>
+Reveal.initialize({
+    hash: true,
+    slideNumber: true,
+    transition: 'slide'
+});
+</script>
+
+</body>
+</html>
