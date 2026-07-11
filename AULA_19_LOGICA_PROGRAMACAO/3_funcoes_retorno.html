@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/scripts.js"></script>
+    <script>
+        // PROGRAMA COM VALIDACAO E CALCULO DE AREA DO TRIANGULO.
+        // FUNCAO COM RETORNO
+    
+        let base = Number(prompt('Digite a Base'))
+        let altura = Number(prompt('Digite a altura'))
+        
+        if(base <= 0 || isNaN(base)) {
+            
+            alert("Base inválida. Digite um número para base.")
+
+        } else if(altura <= 0 || isNaN(altura)) {
+
+            alert("Altura inválida. Digite um número para altura.")
+            
+        } else {
+
+            let area = calcularAreaTriangulo(base, altura)
+            document.write("Área é " + area)
+            
+        }       
+
+    </script>
+</body>
+</html>

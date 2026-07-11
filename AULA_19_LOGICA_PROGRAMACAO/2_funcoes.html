@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // FUNCAO SIMPLES
+        function nomeFuncao() {
+            // Bloco de Codigo
+            document.write("Olá Função <br />")
+        }
+
+        nomeFuncao()
+
+        // FUNCAO COM PARAMETRO
+        function somarDoisNumeros(numero1, numero2) {
+            let resultado = numero1 + numero2
+            document.write(resultado)
+        }
+
+        somarDoisNumeros(12, 20)
+        document.write("<br />")
+        somarDoisNumeros(200, 20)
+        document.write("<br />")
+
+        const n1 = Number(prompt("Digite o Numero 1"))
+        somarDoisNumeros(n1, 132)
+
+        // EXERCICIO
+        // 1.CRIE UMA FUNCAO CHAMADA calcularIMC, A FUNCAO DEVE RECEBER
+        // OS PARAMETROS PESO E ALTURA, A FUNCAO DEVE CALCULAR O IMC
+        // E EXIBIR O RESULTADO.
+        // FORMULA: IMC = peso / (altura * altura)
+
+        // 2. CRIE UMA FUNCAO CHAMADA calcularAreaTriangulo, A FUNCAO DEVE
+        // RECEBER DOIS PARAMETRO, BASE E ALTURA, DEVE CALCULAR E EXIBIR O VALOR.
+        // FORMULA: area = (base * altura) / 2
+        
+    </script>
+</body>
+</html>
