@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores e Matrizes</title>
+</head>
+<body>
+    <script>
+        const alunos = ["Maria", "Jose"]
+        const professores = Array("Valberto", "Alessandro Feitoza")
+        
+        alunos.unshift("Ana")
+        alunos.shift()
+        alunos.push("Mayara")
+        alunos.pop()
+
+        alunos.unshift("Ana Célia")
+        alunos[0] = "Ana Letícia" 
+        document.write(alunos[1])
+        document.write("<br />")
+        document.write(alunos.join(' - '))
+
+        // REMOVER POSICAO SELECIONADA
+        const quantidadeDeRemocao = 1
+        const indiceDoArray = 1
+        alunos.splice(indiceDoArray, quantidadeDeRemocao)
+
+        // SUBSTITUI NOME NO ARRAY
+        alunos.splice(1, 1, 'Jose Alves')     
+        document.write("<br />")
+        document.write(alunos.join(' - '))
+
+    </script>
+</body>
+</html>
