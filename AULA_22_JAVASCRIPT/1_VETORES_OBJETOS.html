@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const professores = ["Ale", "Mario", "Joel", "Joelma"]
+
+        function lerArray(valor, posicao) {
+            document.write(valor + " - " + posicao + "<br />")
+        }
+
+        professores.map(lerArray)
+
+
+
+        // const alunos = ["Arthur", "Renan", "Raul"]
+        // alunos.map(function(nome, posicao){ 
+        // })
+
+        const alunos = ["Arthur", "Renan", "Raul"]
+        const alunosFormados = alunos.map((nome, posicao) => {
+            return nome + " College"
+        })
+        console.log(alunosFormados)
+        // --------------------------------------------------------------
+
+        const numeros = [10, 4, 2]
+        const novosNumeros = numeros.map((numero, posicao, lista) => {
+            return numero + 2
+        })
+        console.log(novosNumeros)
+
+        // OBJETO
+        const pessoas = [
+            { nome: 'Max', idade: 20 },
+            { nome: 'Maria', idade: 22 }
+        ]
+
+        const pessoasAlteradas = pessoas.map((pessoa, posicao) => {
+            pessoa.nome = pessoa.nome + " College"
+            return pessoa
+        })
+
+        console.log(pessoasAlteradas)
+
+    </script>
+</body>
+</html>

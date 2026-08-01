@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Tabela de Registros</h2>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="alunos">
+                
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const alunos = [
+            {
+                nome: "João Silva",
+                email: "joao.silva@email.com"
+            },
+            {
+                nome: "Maria Oliveira",
+                email: "maria.oliveira@email.com"
+            },
+            {
+                nome: "Pedro Santos",
+                email: "pedro.santos@email.com"
+            },
+            {
+                nome: "Ana Costa",
+                email: "ana.costa@email.com"
+            },
+            {
+                nome: "Lucas Pereira",
+                email: "lucas.pereira@email.com"
+            }
+        ];
+
+        // DOM - DOCUMENT OBJECT MODEL - https://dontpad.com/fs60
+        const tbody = document.getElementById('alunos')
+
+        function listarDados() {
+            tbody.innerHTML = ''
+            alunos.map((aluno, index) => {
+                let linha = `
+                    <tr>
+                        <td>${aluno.nome}</td>
+                        <td>${aluno.email}</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm">Editar</button>
+
+                            <button onclick="excluirAluno(${index})"  class="btn btn-danger btn-sm">Excluir</button>
+                        </td>
+                    </tr>
+                `
+                tbody.innerHTML += linha
+            })
+        }
+       
+        listarDados()
+
+        function excluirAluno(posicao) {
+            const check = confirm(`Deseja realmente excluir este aluno da posicao ${posicao} ?`)
+            if(check) {
+                alunos.splice(posicao, 1)
+                listarDados()
+            }
+        }
+
+    </script>
+</body>
+</html>

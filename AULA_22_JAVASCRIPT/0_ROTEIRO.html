@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // REVISAO
+        for(let i = 0; i < 10; i++) {
+            console.log(i)
+        }
+
+        let contador = 0
+        while(contador < 10) {
+            console.log("Contador", contador)
+            contador++
+        }
+
+        // TIPOS DE DADOS - PRIMITIVOS
+        let inteiro = 10 // number
+        let decimal = 10.5 // number
+        let texto = "Texto" // string
+        let logico = true // bool
+        let indefinido // undefined
+        let nulo = null // null
+        let NotANumber = NaN // NaN
+        // DADOS COMPOSTO
+        let lista = ["Max", "Ana", 10, 105.3, true, false, ["Luan", "Alvaro"]] // array
+
+        let nova = lista[6]
+        document.write(nova)
+        document.write("<br />")
+        document.write(typeof nova)
+
+        let objeto = { // object 
+            chave: "Valor"
+        }  
+
+        let pessoa = {
+            nome: "Joao",
+            idade: 20,
+            peso: 79.500,
+            e_casado: false,
+            carros: ["Carro1", "Carro2"],
+            mae: { nome: "MAria"}
+        }
+        document.write(pessoa.mae.nome)
+        console.log(pessoa.carros[0])
+        // 1. CRIE UM OBJETO CARRO E APLIQUE SUAS CARACTERISTICAS: 
+        // EXEMPLO DE OBJETO MOTO ABAIXO:NotANumber
+        const moto = {
+           km: 50.230,
+           modelo: 'XRE 300',
+           marca: 'Honda'
+        }
+        // 2. CRIE UMA VARIAVEL DO TIPO OBJETO PARA TURMA, IDENTIFIQUE
+        // AS CARACTERISTICAS E ADICIONE NAS PROPRIEDADES COM VALORES.
+
+        const aluno1 = {
+            codigo: 1,
+            nome: "JOse",
+            telefone: '',
+            logradouro: '',
+            numero: '',
+            bairro: ''
+        }
+
+        const aluno2 = {
+            codigo: 2,
+            nome: "Joao",
+            telefone: '',
+            logradouro: '',
+            numero: '',
+            bairro: ''
+        }
+
+        let alunos = Array(aluno1, aluno2)
+
+        let a1 = alunos[1]
+        console.log(alunos)
+
+        
+
+
+    </script>
+</body>
+</html>
