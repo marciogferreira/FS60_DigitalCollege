@@ -1,0 +1,165 @@
+const pessoas = [
+  {
+    id: 1,
+    nome: "Carlos Silva",
+    cpf: "123.456.789-00",
+    idade: 42,
+    conjuge: {
+      nome: "Mariana Silva",
+      cpf: "987.654.321-00",
+      idade: 39,
+      profissao: "Professora"
+    },
+    dependentes: [
+      {
+        id: 101,
+        nome: "Lucas Silva",
+        idade: 14,
+        parentesco: "Filho",
+        despesas: [
+          {
+            descricao: "Escola",
+            categoria: "Educação",
+            valor: 1200.00,
+            data: "2026-08-01"
+          },
+          {
+            descricao: "Curso de inglês",
+            categoria: "Educação",
+            valor: 350.00,
+            data: "2026-08-05"
+          }
+        ]
+      },
+      {
+        id: 102,
+        nome: "Ana Silva",
+        idade: 9,
+        parentesco: "Filha",
+        despesas: [
+          {
+            descricao: "Material escolar",
+            categoria: "Educação",
+            valor: 280.00,
+            data: "2026-08-03"
+          },
+          {
+            descricao: "Atividade esportiva",
+            categoria: "Esporte",
+            valor: 180.00,
+            data: "2026-08-07"
+          }
+        ]
+      }
+    ],
+    carros: [
+      {
+        id: 1001,
+        marca: "Toyota",
+        modelo: "Corolla",
+        ano: 2023,
+        placa: "ABC-1D23",
+
+        multas: [
+          {
+            id: 5001,
+            descricao: "Excesso de velocidade",
+            valor: 195.23,
+            pontos: 5,
+            data: "2026-03-15",
+            paga: true
+          },
+          {
+            id: 5002,
+            descricao: "Estacionamento irregular",
+            valor: 130.16,
+            pontos: 4,
+            data: "2026-06-20",
+            paga: false
+          }
+        ]
+      },
+      {
+        id: 1002,
+        marca: "Honda",
+        modelo: "Civic",
+        ano: 2022,
+        placa: "XYZ-9A87",
+
+        multas: [
+          {
+            id: 5003,
+            descricao: "Avanço de sinal vermelho",
+            valor: 293.47,
+            pontos: 7,
+            data: "2026-02-10",
+            paga: false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
+    nome: "João Oliveira",
+    cpf: "456.789.123-00",
+    idade: 51,
+
+    conjuge: {
+      nome: "Fernanda Oliveira",
+      cpf: "321.654.987-00",
+      idade: 48,
+      profissao: "Advogada"
+    },
+
+    dependentes: [
+      {
+        id: 201,
+        nome: "Pedro Oliveira",
+        idade: 17,
+        parentesco: "Filho",
+
+        despesas: [
+          {
+            descricao: "Faculdade preparatória",
+            categoria: "Educação",
+            valor: 900.00,
+            data: "2026-08-02"
+          },
+          {
+            descricao: "Plano de saúde",
+            categoria: "Saúde",
+            valor: 450.00,
+            data: "2026-08-04"
+          }
+        ]
+      }
+    ],
+
+    carros: [
+      {
+        id: 2001,
+        marca: "Volkswagen",
+        modelo: "T-Cross",
+        ano: 2024,
+        placa: "DEF-4E56",
+
+        multas: []
+      }
+    ]
+  }
+];
+
+https://dontpad.com/fs60/vetor
+
+
+pessoas.map((pessoa, posicao) => {
+  document.write(pessoa.nome)
+  document.write(pessoa.conjuge.nome)
+  pessoa.dependentes.map((dependente, indexDep) => {
+    dependente.nome
+    dependente.despesas.map((despesa, indexDes) => {
+      
+    })
+  })
+})

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Olá JS!</h1>
+    <button>
+        Clique Aqui
+    </button>
+
+    <div id="caixa">
+    </div>
+    <div></div>
+    <div></div>
+
+    <script>
+        // DOM - Document Object Model
+        // JS MANDANDO NO HTML
+        console.log(document)
+        document.write("<h2>Ola HTML</h2>")
+
+        const btn = document.querySelector('button')
+        btn.style.backgroundColor = 'red'
+        btn.style.padding = '10px'
+        btn.addEventListener('click', () => {
+            alert("Ola BTN!")
+            document.querySelector('body').style.backgroundColor = 'red'
+        })
+        btn.innerHTML = 'Botao para Teste'
+
+        const cx = document.querySelector('#caixa')
+        cx.innerHTML = '<li>Item 1</li>'
+        cx.style.color = "red"
+
+        const listaDiv = document.querySelectorAll('div')
+        console.log("ListaDIV", listaDiv)
+
+
+    </script>
+</body>
+</html>

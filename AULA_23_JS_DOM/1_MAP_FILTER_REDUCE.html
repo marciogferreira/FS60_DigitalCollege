@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // MAP, FILTER E REDUCE
+
+        const professores = ["Andre", "Luiz", "Hallison"]
+
+        professores.map((nome, posicao) => {
+            document.write(posicao + "-" + nome + "<br />")
+        })
+
+
+
+        const professoresFiltrados = professores.filter((nome, posicao) => {
+            if(nome === 'Luiz') {
+                return nome
+            }
+        })
+
+        const professoresFiltrados2 = professores.filter((nome, posicao) => nome === 'Luiz')
+
+        document.write(professoresFiltrados)
+
+
+        const alunos = [
+            { nome: "Luan", idade: 22 },
+            { nome: "Monica", idade: 35 },
+            { nome: "Rayane", idade: 21 }
+        ]
+        
+        const alunosFiltrados = alunos.filter((aluno, posicao) => {
+            if(aluno.idade < 25) {
+                return aluno
+            }
+        })
+
+
+        // REDUCE
+        const produtos = [
+            { nome: 'Mouse', qtde: 10, valor: 25.99 },
+            { nome: 'Teclado', qtde: 8, valor: 45.99 },
+            { nome: 'Monitor', qtde: 3, valor: 895.99 },
+            { nome: 'CPU', qtde: 2, valor: 4565.99 }
+        ]
+        
+        const total = produtos.reduce((totalizador, produto) => {
+            totalizador = totalizador + (produto.qtde * produto.valor)
+            return totalizador
+        }, 0)
+        document.write("Total de Produtos: " + total)
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
